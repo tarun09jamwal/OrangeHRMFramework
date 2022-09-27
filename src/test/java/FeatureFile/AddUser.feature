@@ -1,4 +1,5 @@
 Feature: feature to test website functionality
+
   Scenario: Check new system user is added
     Given fill username and password and click login
     When User is navigate to the PIM page click on Admin page

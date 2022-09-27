@@ -29,15 +29,15 @@ public class AddUser extends BaseClass {
     }
 
     @Then("Fill the user details and click save")
-    public void fill_the_user_details_and_click_save() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void fill_the_user_details_and_click_save() throws IOException {
+        pageFactory.getUserDetails().UserDetails();
+        System.out.println("User clicked on save button");
     }
 
     @Then("Verify the added user and click on logout")
-    public void verify_the_added_user_and_click_on_logout() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void verify_the_added_user_and_click_on_logout() throws InterruptedException {
+        pageFactory.getUserDetails().verifyUser();
+
 
     }
 }
