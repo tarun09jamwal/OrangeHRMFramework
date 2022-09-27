@@ -2,8 +2,7 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 
-public class PageFactory
-{
+public class PageFactory {
     WebDriver driver;
     private UserDetails userDetails;
 

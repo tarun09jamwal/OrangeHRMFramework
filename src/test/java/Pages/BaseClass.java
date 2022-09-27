@@ -6,14 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeClass;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
-public class BaseClass
-{
+public class BaseClass {
     By usernameInput = By.xpath("//input[@name='username']");
     By passwordInput = By.xpath("//input[@name='password']");
     protected PageFactory pageFactory;
