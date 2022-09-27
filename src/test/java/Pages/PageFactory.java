@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 public class PageFactory {
     WebDriver driver;
     private UserDetails userDetails;
+    private JobTitle jobTitle;
 
     public PageFactory(WebDriver driver) {
         this.driver = driver;
@@ -15,5 +16,11 @@ public class PageFactory {
             userDetails = new UserDetails(driver);
         }
         return userDetails;
+    }
+    public JobTitle getJobTitle() {
+        if (jobTitle == null) {
+            jobTitle = new JobTitle(driver);
+        }
+        return jobTitle;
     }
 }
