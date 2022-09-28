@@ -33,6 +33,7 @@ public class UserDetails {
     By userDropDown = By.xpath("//span[@class='oxd-userdropdown-tab']");
     By logout = By.xpath("//a[contains(text(),'Logout')]");
     By recordFound = By.xpath("//div[@class='oxd-table-header']");
+    By titleRecord = By.xpath("//div[@class='orangehrm-container']");
 
 
     public UserDetails(WebDriver driver) {

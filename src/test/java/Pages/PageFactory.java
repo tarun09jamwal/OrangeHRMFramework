@@ -17,6 +17,7 @@ public class PageFactory {
         }
         return userDetails;
     }
+
     public JobTitle getJobTitle() {
         if (jobTitle == null) {
             jobTitle = new JobTitle(driver);
