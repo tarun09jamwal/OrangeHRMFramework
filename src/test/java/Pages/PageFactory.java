@@ -2,10 +2,12 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 
-public class PageFactory
-{
+public class PageFactory {
     WebDriver driver;
     private UserDetails userDetails;
+    private JobTitle jobTitle;
+    private JobCategorie jobCategorie;
+    private AddEmploymentStatus addEmploymentStatus;
 
     public PageFactory(WebDriver driver) {
         this.driver = driver;
@@ -16,5 +18,26 @@ public class PageFactory
             userDetails = new UserDetails(driver);
         }
         return userDetails;
+    }
+
+    public JobTitle getJobTitle() {
+        if (jobTitle == null) {
+            jobTitle = new JobTitle(driver);
+        }
+        return jobTitle;
+    }
+
+    public JobCategorie getJobCategorie() {
+        if (jobCategorie == null) {
+            jobCategorie = new JobCategorie(driver);
+        }
+        return jobCategorie;
+    }
+
+    public AddEmploymentStatus getAddEmploymentStatus() {
+        if (addEmploymentStatus == null) {
+            addEmploymentStatus = new AddEmploymentStatus(driver);
+        }
+        return addEmploymentStatus;
     }
 }
