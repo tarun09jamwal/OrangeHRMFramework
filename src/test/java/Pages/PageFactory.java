@@ -7,6 +7,7 @@ public class PageFactory {
     private UserDetails userDetails;
     private JobTitle jobTitle;
     private JobCategorie jobCategorie;
+    private AddEmploymentStatus addEmploymentStatus;
 
     public PageFactory(WebDriver driver) {
         this.driver = driver;
@@ -31,5 +32,12 @@ public class PageFactory {
             jobCategorie = new JobCategorie(driver);
         }
         return jobCategorie;
+    }
+
+    public AddEmploymentStatus getAddEmploymentStatus() {
+        if (addEmploymentStatus == null) {
+            addEmploymentStatus = new AddEmploymentStatus(driver);
+        }
+        return addEmploymentStatus;
     }
 }
