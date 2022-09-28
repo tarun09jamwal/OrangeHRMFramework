@@ -31,7 +31,7 @@ public class AddTitle extends BaseClass {
     }
 
     @Then("Fill the job title details and click save")
-    public void fill_the_job_title_details_and_click_save() {
+    public void fill_the_job_title_details_and_click_save() throws IOException {
         pageFactory.getJobTitle().JobTitleDetails();
     }
 
